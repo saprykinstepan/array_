@@ -10,19 +10,16 @@ int task11();
 int task14(double* array, int size);
 int task16();
 int task19();
-int task25();
 
 double calculateValue(int x);
 int analyze_array();
-double myFunction(double x);
 void tabulateFunction();
-void readFileData();
 
 int main() {
     setlocale(LC_ALL, "Russian");
     
     puts("================================================");
-    puts("Лабораторные работы 11, 14, 16, 19, 25:");
+    puts("Лабораторные работы 11, 14, 16, 19:");
     puts("Работа с массивами и функциями");
     puts("================================================\n");
     
@@ -46,7 +43,6 @@ int main() {
     task14(array, size);
     task16();
     task19();
-    task25();
     
     free(array);
     printf("\nВсе работы выполнены успешно!\n");
@@ -308,6 +304,4 @@ void tabulateFunction() {
     
     fclose(file);
     printf("Табулирование завершено. Создано %d записей в файле 'function_table.txt'\n", count);
-}
-    return 0;
 }
